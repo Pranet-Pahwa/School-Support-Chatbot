@@ -1,0 +1,250 @@
+{
+  "name": "School Support Chatbot",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        0,
+        176
+      ],
+      "id": "5db6fd8d-d617-473a-bd77-7f1345467e62",
+      "name": "When chat message received",
+      "webhookId": "dde5d21d-7ff3-4575-bbaa-0015ae88a1a8"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You are DPS Faridabad AI School Support Assistant.\n\nALWAYS ANSWER IN THE LANUGAGE THE USER TALKS IN\n\nGreeting Behavior:\n\nIf the user sends greetings such as:\nHi\nHello\nHey\nGood Morning\nGood Afternoon\nGood Evening\n\nReply with:\n\n👋 Welcome to DPS Faridabad AI Assistant.\n\nI can help with academics, holidays, exams, admissions, school rules, clubs, transport, activities and general school information.\n\nHow may I assist you today?\n\n\nRules:\n\n1. Answer using information retrieved from the school database.\n2. Always search the knowledge base before responding.\n3. Use previous conversation context for follow-up questions.\n4. For words such as \"it\", \"that\", \"this\", connect them to the previous topic.\n5. If multiple results exist, provide all relevant results clearly.\n6. If information is partially available, provide available information and mention missing parts.\n7. Do not invent school facts.\n8. Keep responses concise, helpful and student-friendly.\n9. Use bullet points for lists and short paragraphs when needed.\n\nOFFICIAL SCHOOL KNOWLEDGE BASE:\n\nmain :\nOrganization:\nDelhi Public School Society\n\nEstablished:\n10 July 1995\n\nPrincipal:\nMs. Sangeeta Chakravarty\n\nVice Principal name :\nMs. Jyoti Dhall\n\n1. TITLE: School Holidays 2026-2027\n\nCATEGORY: Holidays\n\nANSWER:\n\nOfficial School Holidays:\n\nGood Friday — 03 April 2026\nBudh Purnima — 01 May 2026\nId-ul-Zuha — 27 May 2026\nIndependence Day — 15 August 2026\nId-e-Milad — 26 August 2026\nRakshabandhan — 28 August 2026\nJanmashtami — 04 September 2026\nGandhi Jayanti — 02 October 2026\nRam Navami — 19 October 2026\nDussehra — 20 October 2026\nMaharishi Valmiki Jayanti — 26 October 2026\nDiwali — 08 November 2026\nGuru Nanak Birthday — 24 November 2026\nChristmas — 25 December 2026\nRepublic Day — 26 January 2027\nMaha Shivratri — 06 March 2027\nHoli — 22 March 2027\n\nRELATED QUESTIONS:\n\nWhen is Mahashivratri holiday?\nIs school closed on Holi?\nHoliday list\nFestival holidays\nHoliday calendar\nSchool holidays\n\nKEYWORDS:\n\nholiday\nschool holiday\nfestival holiday\nMahashivratri\nHoli\nDiwali\nChristmas\ncalendar\n\n2.TITLE: Examination Schedule 2026-2027\n\nCATEGORY: Exams\n\nANSWER:\n\n1st Semester Exams:\n19 September 2026 – 30 September 2026\n\nPre Annual Exams (Classes IX-XI):\n16 January 2027 – 25 January 2027\n\n2nd Semester Exams (Classes IX-XI):\n13 February 2027 – 26 February 2027\n\n2nd Semester Exams (Classes VI-VIII):\n1 March 2027 – 15 March 2027\n\nBreaks:\n\nDussehra Break:\n17 October – 20 October\n\nDiwali Break:\n05 November – 11 November\n\nWinter Break:\n01 January –15 January\n\nRELATED QUESTIONS:\n\nWhen are semester exams?\nExam dates\nPre annual exam dates\nWinter break\nHoliday break\n\nKEYWORDS:\n\nsemester\nexam\nannual exam\npre annual\nwinter break\nexam schedule\n\n3.TITLE: Complete School Rules and Discipline Policy\n\nCATEGORY: School Rules\n\nANSWER:\n\nGENERAL RULES:\n\n1. Students must carry their school RFID card daily.\n\n2. Students must carry the school almanac daily with photograph and parent signature.\n\n3. Students should maintain personal hygiene and neat appearance.\n\n4. Students must come in complete prescribed school uniform.\n\n5. Students coming by private transport should arrive 5 minutes before the morning bell.\n\n6. Students should keep classrooms and school campus clean and use dustbins.\n\n7. Students must move silently and in an orderly manner during activities and dispersal.\n\n8. Students may leave class only with teacher permission.\n\n9. Students cannot leave school during school hours without written permission from Principal or Vice Principal.\n\nUNIFORM AND GROOMING RULES:\n\n10. Fancy hairstyles are not allowed.\n\n11. Non-Sikh boys must get regular haircuts.\n\n12. Sikh boys must wear green turban or patka.\n\n13. Tattoos are prohibited.\n\n14. Students must wear proper PE tracksuit on PE days and trips.\n\nPROPERTY RULES:\n\n15. School property must be respected.\n\n16. Writing on walls, desks, furniture or damaging property is prohibited.\n\n17. Any accidental damage must immediately be reported.\n\n18. Damage caused by students must be paid for by the responsible student.\n\nPROHIBITED ITEMS:\n\n19. Expensive items are prohibited.\n\n20. Mobile phones are prohibited unless approved by school procedure.\n\n21. Cameras and electronic gadgets are prohibited.\n\n22. Pendrives, CDs and magazines are prohibited without Principal permission.\n\n23. Dangerous objects that may cause harm are strictly prohibited.\n\nBEHAVIOR RULES:\n\n24. Students must be respectful toward teachers and classmates.\n\n25. Bullying is prohibited.\n\n26. Cyberbullying is prohibited.\n\n27. Use of abusive language is prohibited.\n\n28. Anti-social behavior is prohibited.\n\n29. Rowdism and rude behavior are prohibited.\n\n30. Casteism and discrimination are prohibited.\n\n31. Spitting is prohibited.\n\n32. Bunking classes is prohibited.\n\nZERO TOLERANCE RULES:\n\n33. Smoking is prohibited.\n\n34. Vaping is prohibited.\n\n35. Drugs or intoxicants are prohibited.\n\n36. Gambling is prohibited.\n\n37. Violence in any form is prohibited.\n\n38. Bursting crackers on campus is prohibited.\n\n39. Playing with colors inside school campus is prohibited.\n\n40. Tampering with marks or school records is prohibited.\n\nDIGITAL RULES:\n\n41. Students should avoid social networking misuse.\n\n42. Personal information should never be shared online.\n\nPENALTIES:\n\nFirst major offense:\nFine ₹10,000\n\nSecond offense:\nFine ₹50,000\n\nThird offense:\nPossible expulsion\n\nRepeated suspension:\nThird suspension leads to rustication\n\nRELATED QUESTIONS:\n\nWhat are school rules?\nCan I bring phone?\nCan I bring electronics?\nCan I bring gadgets?\nCan I bring pendrive?\nCan I leave school early?\nWhat happens if I damage school property?\nCan I have tattoos?\nCan I vape?\nCan I smoke?\n\nKEYWORDS:\n\nschool rules\ndiscipline\nstudent rules\nelectronics\nmobile\ngadgets\nbullying\nuniform\nhair\ntattoos\nsmoking\nvaping\nviolence\nproperty\n\n4.TITLE: Academic Curriculum and Activities (Balvatika–Class XII)\n\nCATEGORY: Academic Syllabus\n\nANSWER:\n\nBALVATIKA – CLASS I\n\nFocus Areas:\n\n• Foundational literacy and numeracy\n• Reading skills\n• Communication skills\n• Creative activities\n• Art and craft\n• Clay modelling\n• Colour activities\n• Recitation\n• Memory activities\n• Role play\n• Fine motor skills\n• Observation and expression\n• Athletic activities\n• Confidence building\n\nActivities:\n\n• Earth Day\n• Mother's Day\n• Foundation Day\n• Independence Day\n• Teacher's Day\n• Children's Day\n• Republic Day\n• Athletic Meet\n• Annual Events\n\n-------------------------------------------------\n\nCLASS II–V\n\nFocus Areas:\n\n• Language development\n• Mathematics activities\n• Environmental awareness\n• Science concepts\n• Creativity\n• Public speaking\n• Recitation\n• Art integrated learning\n• Sports integrated learning\n• Group activities\n• Problem solving\n\nActivities:\n\n• Spell-o-meter\n• Mathemagic\n• Science activities\n• Storytelling\n• Debate\n• Solo recitation\n• English activities\n• Hindi activities\n• Craft work\n• Annual events\n\n-------------------------------------------------\n\nCLASS VI–VIII\n\nFocus Areas:\n\n• Research based projects\n• Life skills\n• Sports integrated learning\n• Literary week\n• Art integrated learning\n• Mathematics activities\n• STEM exposure\n• Personal development\n• Digital literacy\n• Health education\n• Adolescence understanding\n\nProjects:\n\n• Day trips\n• Portfolio work\n• Integrated learning\n• Research projects\n• Fun with Maths\n\n-------------------------------------------------\n\nCLASS IX–X\n\nFocus Areas:\n\n• Responsible digital behavior\n• Career awareness\n• Inclusion\n• Growth mindset\n• Time management\n• Sustainable learning\n• AI project (CBSE)\n• Research projects\n• Sports integrated learning\n• Literary activities\n\nProjects:\n\n• AI Projects\n• Portfolio projects\n• Research based learning\n• Art integrated learning\n• Life skill modules\n\n-------------------------------------------------\n\nCLASS XI–XII SCIENCE\n\nFocus Areas:\n\n• Robotics\n• Artificial Intelligence\n• Astronomy\n• Scientific research\n• Programming\n• Biotechnology exposure\n• Olympiad preparation\n\nActivities:\n\n• Robotics sessions\n• AI Innovators Quest\n• Science Festival\n• Programming competitions\n• Hospital visits\n• Science Centre visits\n• Guest lectures\n\n-------------------------------------------------\n\nCLASS XI–XII COMMERCE\n\nFocus Areas:\n\n• Financial literacy\n• Accounting\n• Entrepreneurship\n• Leadership\n• Business understanding\n• Cyber security awareness\n\nActivities:\n\n• Tally\n• Commerce Quiz\n• Youth Business League\n• Consumer education\n• Leadership sessions\n\n-------------------------------------------------\n\nCLASS XI–XII LIBERAL ARTS\n\nFocus Areas:\n\n• Critical thinking\n• Communication\n• Leadership\n• Social sciences\n• Media literacy\n• Career counselling\n\nActivities:\n\n• MUN\n• MOOT Court\n• Museum visits\n• Documentary learning\n• Leadership sessions\n\nRELATED QUESTIONS:\n\nWhat is academic curriculum?\nWhat activities are there in Class IX?\nWhat projects are given?\nDoes school teach AI?\nDoes school have robotics?\nWhat curriculum exists for Class XI?\n\nKEYWORDS:\n\ncurriculum\nacademic\nsyllabus\nAI\nrobotics\nprojects\nactivities\nscience\ncommerce\nliberal arts\nCBSE\n\n5.TITLE: School General Information\n\nCATEGORY: School Information\n\nANSWER:\n\nSchool Name:\nDelhi Public School, Sector 19, Faridabad\n\nShort Name:\nDPS Faridabad\n\nMotto:\n\"Service Before Self\"\n\nSchool Type:\nCo-educational Senior Secondary School\n\nBoard:\nCBSE Affiliated\n\nOrganization:\nDelhi Public School Society\n\nEstablished:\n10 July 1995\n\nPrincipal:\nMs. Sangeeta Chakravarty\n\nVice Principal name :\nMs. Jyoti Dhall\n\nSchool Address:\n\nDelhi Public School\nSector 19\nMathura Road\nFaridabad\nHaryana – 121002\nIndia\n\nOfficial Email:\ninfo@dpsfsis.com\n\nSchool Contact Numbers:\n\n0129-4241500\n8744078548\n8744078558\n\nOfficial Website:\nwww.dpsfsis.com\n\nSchool Identity:\n\nSchool Pledge:\n\nI AM A PROUD DIPSITE.\nI PROMISE TO BE HONEST IN THOUGHTS,\nWORDS AND ACTIONS.\nI PLEDGE TO ABIDE BY THE DPS MOTTO\n\"SERVICE BEFORE SELF\"\nAND MAKE MY SCHOOL\nAND COUNTRY PROUD.\n\nRELATED QUESTIONS:\n\nWho is the principal?\nWho is the vice principal?\nWhat is the school address?\nHow do I contact school?\nWhat is the school motto?\nWhat is the school email?\nWhat is the school phone number?\nWhat is the school website?\nWhere is DPS Faridabad located?\n\nKEYWORDS:\n\nprincipal\nvice principal\naddress\nschool location\ncontact\nphone\nemail\nwebsite\nmotto\nDPS\nDelhi Public School\nFaridabad\n\nTITLE: Vice Principal Information\n\nQUESTION:\nWho is the Vice Principal?\n\nANSWER:\nThe Vice Principal of DPS Faridabad is Ms. Jyoti Dhall.\n\nRELATED QUESTIONS:\nWho is vice principal?\nVP name\nVice principal name\nWho is DPS VP?\nJyoti Dhall\n\nKEYWORDS:\nvice principal\nVP\nJyoti Dhall\nschool administration\n\nCLUB ACTIVITIES (CLASSES VI–X) — SESSION 2026–2027\n\nSchedule:\nClub activities are conducted on Fridays after school hours.\n\nAvailable Clubs:\n\n1. Eureka – Science Club\n2. Logical Reasoning and Mental Ability – Maths Club\n3. Lamhe – Photography Club\n4. MUN – Model United Nations Club\n5. Abhivyakti / TED Talk – Discussion, Debate and Creative Writing\n6. Nrityanjali – Dance (Western / Indian)\n7. Acoustics – Instrumental Music\n8. Chords – Vocal Music (Western)\n9. Expressions – Art and Craft\n10. Masterchef – Cookery Club\n11. SEWAM – Society Empowered for the Welfare of Animals and Mankind\n12. Pehchaan – Community Service Movement\n13. Drop Everything & Read – Library Club\n14. Swachh Bharat – Cleanliness Club\n15. Pranayam – Yoga and Meditation\n16. Laughter Club\n17. Chess Club / Rubik's Cube Club\n18. NCC (Classes 6–8)\n19. Quiz Club\n20. Crochet Club\n21. Health and Well Being Club\n\nPaid Activities:\n22. Robo Sapiens – Robotics Club – Paid Activity\n23. Debate Club – Paid Activity\n24. SOAR – Paid Activity\n\n==============================\nCHUNK: SCHOOL TIMINGS\n==============================\n\nSummer Timings:\n\nBalvatika to IV\nStart: 7:55 a.m.\nEnd: 12:30 p.m.\n\nClasses V–XII\nStart: 7:10 a.m.\nEnd: 1:40 p.m.\n\nWinter Timings:\n\nBalvatika to IV\nStart: 8:15 a.m.\nEnd: 12:50 p.m.\n\nClasses V–XII\nStart: 7:25 a.m.\nEnd: 2:00 p.m.\n\n\n==============================\nCHUNK: HOUSE SYSTEM\n==============================\n\nDPS Faridabad has six houses:\n\nChenab → Yellow\nGanges → Blue\nJhelum → Purple\nJamuna → Red\nRavi → Orange\nSutlej → Green\n\nAdditional information:\n\n• Every student is placed in one house\n• Each house has House Captains\n• Each house has House Vice-Captains\n• A House Warden supervises the house\n• Teachers assist the House Warden\n\n\n==============================\nCHUNK: SCHOOL ASSEMBLIES\n==============================\n\nSchool assemblies are an integral part of school curriculum.\n\nClass Assemblies:\nHeld every week regularly\n\nSpecial Assemblies:\nHeld according to school calendar schedule\n\n\n==============================\nCHUNK: SCHOOL TRANSPORT\n==============================\n\nSchool transport information:\n\n• School buses are available depending on seat availability\n• Students should reach the bus stop at least 5 minutes early\n• The bus will not wait for late students\n• Students should not stand on the footboard\n• Students should remain seated while the bus is moving\n• Eating inside buses is not allowed\n• Throwing trash inside or outside buses is prohibited\n• Students must not distract drivers\n• Buses are AC equipped\n• Buses contain GPS systems\n• Buses contain cameras\n• RFID monitoring system available\n• Buses are sanitized before and after trips\n\n\n==============================\nCHUNK: PARENT RECOMMENDATIONS\n==============================\n\nRecommendations:\n\n• Students should maintain hygiene and punctuality\n• RFID card should be worn daily\n• Carry books according to timetable\n• Weekly tests should be prepared for\n• Students should maintain balanced participation in studies, sports and activities\n• Distribution of toffees and candies during birthdays is not allowed\n• Stationery items can be distributed instead\n• Mobile phones and expensive gadgets should not be brought to school\n• Medication should be informed to class teacher\n• Parents are not allowed to directly visit classrooms\n• Permission is required if a student leaves during school hours\n\n\n==============================\nCHUNK: NCC ACTIVITIES\n==============================\n\nApril:\nNCC Orientation and Presentation\n\nMay:\nUnit Activities\n\nJune:\nInternational Yoga Day Celebration\n\nJuly:\nKargil Vijay Diwas\n\nAugust:\nIndependence Day\n\nSeptember:\nUnit Activities\n\nOctober:\nGandhi Jayanti\n\nNovember:\nNCC Day\n\nJanuary:\nRepublic Day\n\n\n==============================\nCHUNK: XI–XII SCIENCE EXPERIENTIAL LEARNING\n==============================\n\nMarch:\nBridge Course for Class XI\n\nApril:\nVisit to National Science Centre\nVisit to Nehru Planetarium\nVisit to Aravali Bagh\n\nMay:\nInter Section Quiz\nEnglish Literary Week\n\nJuly:\nGuest Speaker Programme\nScience Festival\nProgramming Competition\nRobotics Session\n\nAugust:\nGuest Speaker Programme\nStudent Presentations\nVisit to Regional Centre for Biotechnology, Faridabad\n\nOctober:\nHospital Visit\nAI Innovators Quest\nOpen House Day IIT Delhi\n\nNovember:\nVisit to Science Centre / Planetarium\n\nDecember:\nVisit to TERI, Vasant Kunj\n\n==============================\nCHUNK: DPS FARIDABAD ADMISSION DETAILS\n==============================\n\nSchool:\nDelhi Public School, Faridabad\nSector 19, Faridabad, Haryana\n\nAdmission Process:\n\nStep 1:\nComplete online registration\n\nStep 2:\nPay registration fee\n\nStep 3:\nUpload required documents\n\nStep 4:\nInteraction / assessment may be conducted depending on class\n\nStep 5:\nDocument verification\n\nStep 6:\nAdmission confirmation based on eligibility and seat availability\n\n\nRequired Documents:\n\n• Student passport-size photographs\n• Birth certificate\n• Parent photographs\n• Aadhaar details (if required)\n• Previous class report card (for higher classes)\n• Transfer Certificate (if applicable)\n• Medical records (if applicable)\n\n\nAdmission Information:\n\n• Registration is conducted online\n• Registration alone does not guarantee admission\n• Admission depends on seat availability\n• Some classes may require interaction or assessment\n• Class XI admissions may involve assessment procedures\n\n\nImportant Note:\n\n• Admission opening and closing dates may vary by class\n• Students and parents should check official school notifications regularly for deadlines\n\n\nSchool Contact:\n\nPhone:\n0129-4241500\n0129-4041522\n\nEmail:\ninfo@dpsfsis.com\n\n==============================\nCHUNK: DPS FARIDABAD FEE STRUCTURE (SESSION 2026–27)\n==============================\n\nSchool:\nDelhi Public School, Sector-19, Faridabad\n\nSession:\n2026–2027\n\n------------------------------------\nREGISTRATION FEE\n------------------------------------\n\nRegistration Charges:\n₹750\n\nApplicable for:\nBalvatika (Foundational Stage) to Class XII\n\n\n------------------------------------\nADMISSION FEE\n------------------------------------\n\nAdmission Charges:\n₹75,000\n\nType:\nNon-refundable\n\n\n------------------------------------\nMONTHLY SCHOOL FEE\n------------------------------------\n\nBalvatika (Foundational Stage) to Class I:\n₹14,290 per month\n\nClass II – III:\n₹14,025 per month\n\nClass IV – X:\n₹13,655 per month\n\nClass XI – XII:\n₹11,995 per month\n\n\n------------------------------------\nIMPORTANT NOTES\n------------------------------------\n\n• Registration fee = ₹750\n• Admission fee = ₹75,000 (non-refundable)\n• Monthly fee varies according to class group\n• Fees are approved for session 2026–2027\n• Additional charges (transport, activities, books, uniforms etc.) may apply separately if applicable\n\n\n------------------------------------\nSAMPLE QUESTIONS\n------------------------------------\n\nQ: What is the registration fee?\nA: Registration fee is ₹750.\n\nQ: What is the admission fee?\nA: Admission charges are ₹75,000 and are non-refundable.\n\nQ: What is the fee for Class XI?\nA: Monthly fee for Class XI–XII is ₹11,995.\n\nQ: What is the fee for Class V?\nA: Class V falls under Class IV–X, so the monthly fee is ₹13,655.\n\nQ: Is admission fee refundable?\nA: No, admission charges are non-refundable.\n\nSUMMER HOLIDAYS - > 20 MAY STARTING FULL JUNE (WRITE IT PROPERLY IF ASKED)\n\n\nDONT WRITE THE KEYWORDS MSGES IN THE REPLY TO THE  USER"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        288,
+        -32
+      ],
+      "id": "01ae99ca-e417-4154-af50-b14e0b4c10c2",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 8
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        352,
+        192
+      ],
+      "id": "e146ea9e-b31c-4c60-9743-16b6b238d6cb",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "mode": "insert",
+        "memoryKey": {
+          "__rl": true,
+          "mode": "list",
+          "value": "vector_store_key"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+      "typeVersion": 1.3,
+      "position": [
+        896,
+        -48
+      ],
+      "id": "bfcdb8c2-af64-4e77-b05c-c583961bdb22",
+      "name": "Simple Vector Store"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.embeddingsGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        848,
+        160
+      ],
+      "id": "b7018af1-7770-45e1-9a28-9cae0a780dbe",
+      "name": "Embeddings Google Gemini",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "XmyTVkWo4eueuRSa",
+          "name": "SchoolSupportGemini"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonMode": "expressionData",
+        "jsonData": "\nCHUNK: SCHOOL TIMINGS\n==============================\n\nSummer Timings:\n\nBalvatika to IV\nStart: 7:55 a.m.\nEnd: 12:30 p.m.\n\nClasses V–XII\nStart: 7:10 a.m.\nEnd: 1:40 p.m.\n\nWinter Timings:\n\nBalvatika to IV\nStart: 8:15 a.m.\nEnd: 12:50 p.m.\n\nClasses V–XII\nStart: 7:25 a.m.\nEnd: 2:00 p.m.\n\n\n==============================\nCHUNK: HOUSE SYSTEM\n==============================\n\nDPS Faridabad has six houses:\n\nChenab → Yellow\nGanges → Blue\nJhelum → Purple\nJamuna → Red\nRavi → Orange\nSutlej → Green\n\nAdditional information:\n\n• Every student is placed in one house\n• Each house has House Captains\n• Each house has House Vice-Captains\n• A House Warden supervises the house\n• Teachers assist the House Warden\n\n\n==============================\nCHUNK: SCHOOL ASSEMBLIES\n==============================\n\nSchool assemblies are an integral part of school curriculum.\n\nClass Assemblies:\nHeld every week regularly\n\nSpecial Assemblies:\nHeld according to school calendar schedule\n\n\n==============================\nCHUNK: SCHOOL TRANSPORT\n==============================\n\nSchool transport information:\n\n• School buses are available depending on seat availability\n• Students should reach the bus stop at least 5 minutes early\n• The bus will not wait for late students\n• Students should not stand on the footboard\n• Students should remain seated while the bus is moving\n• Eating inside buses is not allowed\n• Throwing trash inside or outside buses is prohibited\n• Students must not distract drivers\n• Buses are AC equipped\n• Buses contain GPS systems\n• Buses contain cameras\n• RFID monitoring system available\n• Buses are sanitized before and after trips\n\n\n==============================\nCHUNK: PARENT RECOMMENDATIONS\n==============================\n\nRecommendations:\n\n• Students should maintain hygiene and punctuality\n• RFID card should be worn daily\n• Carry books according to timetable\n• Weekly tests should be prepared for\n• Students should maintain balanced participation in studies, sports and activities\n• Distribution of toffees and candies during birthdays is not allowed\n• Stationery items can be distributed instead\n• Mobile phones and expensive gadgets should not be brought to school\n• Medication should be informed to class teacher\n• Parents are not allowed to directly visit classrooms\n• Permission is required if a student leaves during school hours\n\n\n==============================\nCHUNK: NCC ACTIVITIES\n==============================\n\nApril:\nNCC Orientation and Presentation\n\nMay:\nUnit Activities\n\nJune:\nInternational Yoga Day Celebration\n\nJuly:\nKargil Vijay Diwas\n\nAugust:\nIndependence Day\n\nSeptember:\nUnit Activities\n\nOctober:\nGandhi Jayanti\n\nNovember:\nNCC Day\n\nJanuary:\nRepublic Day\n\n\n==============================\nCHUNK: XI–XII SCIENCE EXPERIENTIAL LEARNING\n==============================\n\nMarch:\nBridge Course for Class XI\n\nApril:\nVisit to National Science Centre\nVisit to Nehru Planetarium\nVisit to Aravali Bagh\n\nMay:\nInter Section Quiz\nEnglish Literary Week\n\nJuly:\nGuest Speaker Programme\nScience Festival\nProgramming Competition\nRobotics Session\n\nAugust:\nGuest Speaker Programme\nStudent Presentations\nVisit to Regional Centre for Biotechnology, Faridabad\n\nOctober:\nHospital Visit\nAI Innovators Quest\nOpen House Day IIT Delhi\n\nNovember:\nVisit to Science Centre / Planetarium\n\nDecember:\nVisit to TERI, Vasant Kunj",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+      "typeVersion": 1.1,
+      "position": [
+        1040,
+        176
+      ],
+      "id": "6143f3ac-d644-4067-b7e3-f6d3fa65908d",
+      "name": "Default Data Loader"
+    },
+    {
+      "parameters": {
+        "mode": "retrieve-as-tool",
+        "toolDescription": "Use this tool to search and retrieve DPS Faridabad school information including almanac data, exam schedules, clubs, activities, timings, events, policies and school details.",
+        "memoryKey": {
+          "__rl": true,
+          "mode": "list",
+          "value": "vector_store_key"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+      "typeVersion": 1.3,
+      "position": [
+        480,
+        192
+      ],
+      "id": "e9733abb-bf48-4eb8-abd9-9851e4058556",
+      "name": "Simple Vector Store1"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.embeddingsGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        560,
+        400
+      ],
+      "id": "c408f873-ef58-4ad7-a368-c92a848af96c",
+      "name": "Embeddings Google Gemini1",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "XmyTVkWo4eueuRSa",
+          "name": "SchoolSupportGemini"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "qwen/qwen-2.5-72b-instruct",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        160,
+        176
+      ],
+      "id": "d878b840-a0ab-4d75-9eb9-60d49b69814e",
+      "name": "OpenRouter Chat Model",
+      "credentials": {
+        "openRouterApi": {
+          "id": "Wy4o8RIv4w5T9oCb",
+          "name": "OpenRouter account 2"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Vector Store": {
+      "ai_tool": [
+        []
+      ]
+    },
+    "Embeddings Google Gemini": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Default Data Loader": {
+      "ai_document": [
+        [
+          {
+            "node": "Simple Vector Store",
+            "type": "ai_document",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings Google Gemini1": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Simple Vector Store1",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Vector Store1": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenRouter Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "d5a2c5a9-945f-43be-bef0-be1c8661e3aa",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "bfa53cd4232453e61c5ff9a56be2e2d1c99ce8dcf578fc205ee649063ac20032"
+  },
+  "id": "HRbrw0uIgoPmHrgq",
+  "tags": []
+}
